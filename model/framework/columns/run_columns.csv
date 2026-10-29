@@ -1,1 +1,15 @@
 name,type,direction,description
+ompf_score,float,high,Fixed-formula OmpF porin permeation score from molecular size and net charge and primary amine count where higher means more favourable passage
+ompf_percentile,float,high,Percentile of the OmpF score among 73154 CO-ADD reference molecules where higher means more favourable passage
+ompf_cut,integer,high,Call of 1 when the OmpF percentile is at least 0.95 and 0 otherwise
+multiporin_score,float,high,Random forest multi-porin permeation score where higher means more favourable passage
+multiporin_percentile,float,high,Percentile of the multi-porin score among 73154 CO-ADD reference molecules where higher means more favourable passage
+multiporin_cut,integer,high,Call of 1 when the multi-porin percentile is at least 0.98 and 0 otherwise
+lipid_score,float,high,Random forest probability from the CO-ADD lpxC case-control that the outer membrane holds the molecule back where higher means more held back
+lipid_percentile,float,high,Percentile of the reversed lipid-route score among 73154 CO-ADD reference molecules where higher means the outer membrane holds the molecule back less
+lipid_cut,integer,high,Call of 1 when the lipid-route percentile is at least 0.99 and 0 otherwise
+efflux_score,float,high,Logistic regression probability from the CO-ADD tolC case-control that the molecule is pumped out where higher means more efflux
+efflux_percentile,float,high,Percentile of the reversed efflux score among 73154 CO-ADD reference molecules where higher means less efflux
+activity_score,float,high,XGBoost probability of Escherichia coli growth inhibition at MIC of 8 ug/mL or lower trained on ChEMBL
+activity_percentile,float,high,Percentile of the activity score among 73154 CO-ADD reference molecules where higher means more likely active
+activity_call,integer,high,Call of 1 when the activity score is at least 0.50 and 0 otherwise

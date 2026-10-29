@@ -2,45 +2,33 @@ Identifier: eos8bpb
 Slug: ecoli-permeation-efflux
 Status: In progress
 Title: MechGate E. coli Permeation
-Description: 'Scores a molecule against five Escherichia coli barriers with separate
-  models: OmpF porin permeation, multi-porin permeation, lipid-route permeation, efflux
-  susceptibility and whole-cell activity (MIC of 8 ug/mL or lower), built from 3D
-  conformer and charge descriptors at pH 7.4. Each score comes with its percentile
-  against 73, 154 CO-ADD compounds, and no total score is formed. Evaluated retrospectively
-  on marketed drugs only; results depend on the SMILES string written.'
+Description: "Scores a molecule on five Escherichia coli barriers: OmpF porin permeation, multi-porin permeation, lipid-route permeation, efflux susceptibility and whole-cell activity (MIC of 8 ug/mL or lower), from 3D conformer and charge descriptors at pH 7.4. Models were trained on CO-ADD screens and ChEMBL; each score carries a percentile against 73,154 CO-ADD compounds, with four binary calls at the authors' cut-offs. Validated retrospectively on marketed drugs. Output depends on the SMILES string written, and large molecules are slow."
 Deployment:
   - Local
-  - Online
-Source: Local, Online
-Source Type: Internal, Replicated, External
-Task: Annotation, Representation, Sampling
-Subtask: Property calculation or prediction, Activity prediction, Featurization,
-  Projection, Similarity search, Generation
+Source: Local
+Source Type: External
+Task: Annotation
+Subtask: Activity prediction
 Input:
   - Compound
 Input Dimension: 1
 Output:
-  - Value
   - Score
-  - Compound
-  - Text
-Output Dimension: 1
-Output Consistency: Fixed, Variable
-Interpretation: The output of this template model should be interpreted like 
-  this.
+  - Value
+Output Dimension: 14
+Output Consistency: Fixed
+Interpretation: Five E. coli measures as scores and CO-ADD percentiles, plus four calls where 1 means high or selected.
 Tag:
   - Antimicrobial activity
   - Gram-negative bacteria
   - Permeability
 Biomedical Area:
-  - Biomedical Area 1
-  - Biomedical Area 2
+  - Antimicrobial resistance
 Target Organism:
-  - Target Organism 1
-  - Target Organism 2
-Publication Type: Peer reviewed, Preprint, Other
+  - Escherichia coli
+Publication Type: Preprint
 Publication Year: 2026
-Publication: https://arxiv.org/abs/2610.33809
+Publication: https://doi.org/10.48550/arXiv.2610.33809
 Source Code: https://github.com/qinlang0008-blip/mechgate
 License: GPL-2.0-only
 Contributor: TiagoJanela
