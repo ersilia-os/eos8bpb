@@ -1,6 +1,6 @@
 Identifier: eos8bpb
 Slug: ecoli-permeation-efflux
-Status: In progress
+Status: Ready
 Title: MechGate E. coli Permeation
 Description: 'Scores a molecule on five Escherichia coli barriers: OmpF porin permeation,
   multi-porin permeation, lipid-route permeation, efflux susceptibility and whole-cell
@@ -40,6 +40,18 @@ Source Code: https://github.com/qinlang0008-blip/mechgate
 License: GPL-2.0-only
 Contributor: TiagoJanela
 Incorporation Date: '2026-10-29'
+Last Packaging Date: '2026-10-30'
+Release: v1.0.0
 S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos8bpb.zip
+DockerHub: https://hub.docker.com/r/ersiliaos/eos8bpb
+Docker Architecture:
+  - AMD64
+  - ARM64
 Model Size: 5.0
 Environment Size: 1587.0
+Image Size: 1710.52
+Computational Performance 1: 24.93
+Computational Performance 2: 60.5
+Computational Performance 3: 358.61
+Computational Performance 4: -1.0
+Computational Performance 5: -1.0
