@@ -1,8 +1,8 @@
 # MechGate E. coli Permeation
 
-Scores a molecule on five Escherichia coli barriers: OmpF porin permeation, multi-porin permeation, lipid-route permeation, efflux susceptibility and whole-cell activity (MIC of 8 ug/mL or lower), from 3D conformer and charge descriptors at pH 7.4. Models were trained on CO-ADD screens and ChEMBL; each score carries a percentile against 73,154 CO-ADD compounds, with four binary calls at the authors' cut-offs. Validated retrospectively on marketed drugs. Output depends on the SMILES string written, and large molecules are slow.
+Scores a molecule on five Escherichia coli barriers: OmpF porin permeation, multi-porin permeation, lipid-route permeation, efflux susceptibility and whole-cell activity (MIC of 8 ug/mL or lower), from 3D conformer and charge descriptors at pH 7.4. Models were trained on CO-ADD screens and ChEMBL; each score carries a percentile against 73,154 CO-ADD compounds, with four binary calls at the authors cut-offs. Validated retrospectively on marketed drugs. Output depends on the SMILES string written, and large molecules are slow.
 
-
+This model was incorporated on 2026-10-29.Last packaged on 2026-10-30.
 
 ## Information
 ### Identifiers
@@ -43,9 +43,19 @@ _10 of 14 columns are shown_
 ### Source and Deployment
 - **Source:** `Local`
 - **Source Type:** `External`
+- **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos8bpb](https://hub.docker.com/r/ersiliaos/eos8bpb)
+- **Docker Architecture:** `AMD64`, `ARM64`
+- **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos8bpb.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos8bpb.zip)
 
 ### Resource Consumption
+- **Model Size (Mb):** `5`
+- **Environment Size (Mb):** `1587`
+- **Image Size (Mb):** `1710.52`
 
+**Computational Performance (seconds):**
+- 10 inputs: `24.93`
+- 100 inputs: `358.61`
+- 10000 inputs: `-1`
 
 ### References
 - **Source Code**: [https://github.com/qinlang0008-blip/mechgate](https://github.com/qinlang0008-blip/mechgate)
