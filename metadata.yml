@@ -2,7 +2,13 @@ Identifier: eos8bpb
 Slug: ecoli-permeation-efflux
 Status: In progress
 Title: MechGate E. coli Permeation
-Description: "Scores a molecule on five Escherichia coli barriers: OmpF porin permeation, multi-porin permeation, lipid-route permeation, efflux susceptibility and whole-cell activity (MIC of 8 ug/mL or lower), from 3D conformer and charge descriptors at pH 7.4. Models were trained on CO-ADD screens and ChEMBL; each score carries a percentile against 73,154 CO-ADD compounds, with four binary calls at the authors' cut-offs. Validated retrospectively on marketed drugs. Output depends on the SMILES string written, and large molecules are slow."
+Description: 'Scores a molecule on five Escherichia coli barriers: OmpF porin permeation,
+  multi-porin permeation, lipid-route permeation, efflux susceptibility and whole-cell
+  activity (MIC of 8 ug/mL or lower), from 3D conformer and charge descriptors at
+  pH 7.4. Models were trained on CO-ADD screens and ChEMBL; each score carries a percentile
+  against 73,154 CO-ADD compounds, with four binary calls at the authors cut-offs.
+  Validated retrospectively on marketed drugs. Output depends on the SMILES string
+  written, and large molecules are slow.'
 Deployment:
   - Local
 Source: Local
@@ -17,7 +23,8 @@ Output:
   - Value
 Output Dimension: 14
 Output Consistency: Fixed
-Interpretation: Five E. coli measures as scores and CO-ADD percentiles, plus four calls where 1 means high or selected.
+Interpretation: Five E. coli measures as scores and CO-ADD percentiles, plus 
+  four calls where 1 means high or selected.
 Tag:
   - Antimicrobial activity
   - Gram-negative bacteria
@@ -32,3 +39,4 @@ Publication: https://doi.org/10.48550/arXiv.2610.33809
 Source Code: https://github.com/qinlang0008-blip/mechgate
 License: GPL-2.0-only
 Contributor: TiagoJanela
+Incorporation Date: '2026-10-29'
