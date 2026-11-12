@@ -1,0 +1,40 @@
+{
+ "file": "ref_73154.npz",
+ "npz_md5": "01a1439e786998831659414696a05529",
+ "npz_bytes": 1075166,
+ "what_it_is": "Reference score distributions for the five measures on the fixed base set of 73,154 molecules. Each array is that measure's scores over the base set, sorted ascending. Percentile columns are the mid-rank position of a query score within these arrays.",
+ "contains_molecule_identity": false,
+ "identity_check": "Verified 2026-10-17: the archive holds exactly five float64 arrays of shape (73154,) and nothing else. No CO-ADD ID, no InChIKey, no SMILES, no descriptor values -- score distributions only.",
+ "n_base": 73154,
+ "arrays": {
+  "scaleA": {
+   "measure": "ompf",
+   "orientation": "forward",
+   "note": "stores the score as-is"
+  },
+  "l2_s1": {
+   "measure": "multiporin",
+   "orientation": "forward",
+   "note": "stores the score as-is"
+  },
+  "oil5": {
+   "measure": "lipid",
+   "orientation": "reverse",
+   "note": "stores -score, so that a higher percentile still means easier penetration"
+  },
+  "efflux_f3": {
+   "measure": "efflux",
+   "orientation": "reverse",
+   "note": "stores -score, so that a higher percentile still means harder to pump out"
+  },
+  "activity": {
+   "measure": "activity",
+   "orientation": "forward",
+   "note": "stores the score as-is"
+  }
+ },
+ "array_names": "The array names are the historical filenames of the landed rulers and are kept so the provenance stays traceable. The public mapping to measure names is given above and in mechgate.core.MechGate.REF.",
+ "provenance": "Same configuration as the reference pipeline; base set = the 73,154 molecules remaining after intake filtering.",
+ "activity_provenance": "Taken directly from the already-landed ruler l3_scores_coadd73154_v10.tsv (md5=6ed66a72e8cedeb74e766040d20a379d, 73,154 rows). Not self-built and not recomputed.",
+ "other_four_provenance": "Rebuilt by tools/build_rulers.py, which only reads already-landed descriptor tables; no descriptor was recomputed."
+}
