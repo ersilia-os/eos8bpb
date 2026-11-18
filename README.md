@@ -2,7 +2,8 @@
 
 Scores a molecule on five Escherichia coli barriers: OmpF porin permeation, multi-porin permeation, lipid-route permeation, efflux susceptibility and whole-cell activity (MIC of 8 ug/mL or lower), from 3D conformer and charge descriptors at pH 7.4. Models were trained on CO-ADD screens and ChEMBL; each score carries a percentile against 73,154 CO-ADD compounds, with four binary calls at the authors cut-offs. Validated retrospectively on marketed drugs. Output depends on the SMILES string written, and large molecules are slow.
 
-This model was incorporated on 2026-10-29.Last packaged on 2026-10-30.
+This model was incorporated on 2026-10-29.
+Last packaged on 2026-10-30.
 
 ## Information
 ### Identifiers
@@ -46,6 +47,7 @@ _10 of 14 columns are shown_
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos8bpb](https://hub.docker.com/r/ersiliaos/eos8bpb)
 - **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos8bpb.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos8bpb.zip)
+- **Apptainer**: [https://models-sif.s3.eu-north-1.amazonaws.com/eos8bpb_v1.sif](https://models-sif.s3.eu-north-1.amazonaws.com/eos8bpb_v1.sif)
 
 ### Resource Consumption
 - **Model Size (Mb):** `5`
