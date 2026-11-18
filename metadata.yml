@@ -41,7 +41,7 @@ License: GPL-2.0-only
 Contributor: TiagoJanela
 Incorporation Date: '2026-10-29'
 Last Packaging Date: '2026-10-30'
-Release: v1.0.0
+Release: v1.0.1
 S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos8bpb.zip
 DockerHub: https://hub.docker.com/r/ersiliaos/eos8bpb
 Docker Architecture:
